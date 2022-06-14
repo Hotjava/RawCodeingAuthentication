@@ -1,0 +1,17 @@
+﻿<h1>Client Home</h1>
+
+@* Simple access quick checks *@
+@if (User.Identity.IsAuthenticated)
+{
+    <h1>User is authenticated</h1>
+}
+else
+{
+    <h1>User is NOT authenticated</h1>
+}
+
+
+@* Big guns reusable functions *@
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService authorizationService
+
