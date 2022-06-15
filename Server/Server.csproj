@@ -8,15 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\OAuth\Login.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Pages\OAuth\Login.cshtml" />
-    <_ContentIncludedByDefault Remove="Pages\OAuth\Token.cshtml" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.6" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\OAuth\Token.cshtml" />
+    <Folder Include="Views\OAuth\" />
   </ItemGroup>
 
 </Project>

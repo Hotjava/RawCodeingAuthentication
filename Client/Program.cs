@@ -24,8 +24,8 @@ builder.Services.AddAuthentication(
         config.CallbackPath = "/oauth/callback/";
         config.ClientId = "client";
         config.ClientSecret = "secret";
-        config.AuthorizationEndpoint = "https//localhost:44333/oauth/login";
-        config.TokenEndpoint = "https//localhost:44333/oauth/token";
+        config.AuthorizationEndpoint = "https://localhost:7271/oauth/login";
+        config.TokenEndpoint = "https://localhost:7271/oauth/token";
     });
 
 
